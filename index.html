@@ -240,6 +240,24 @@
             </ol>
         </div>
         </div>
+    <div  class="panel panel-definition" style="margin-top: 5%;">
+    <div class="panel-body"> 
+        <h3 style="text-align:center">Polling job checkout:</h3>
+        <ol>
+        <li><h3>Query Job</h3></li>
+        <ul>
+            <li>GET request <a href="#operation--job-jobs-get">/job/jobs?conditions=ISBN13%3d{isbn}</a></li>
+            <li><a href="#definition-JobRecord">Job record</a> will be returned.</li>
+            <li>Inside the returned response you should be able to see Progress.stage and Progress.percent 
+                <ul>
+                <li>You want to wait for Progress.stage to equal Complete</li>
+                <li>You want to wait for Progress.percent to equal 100</li>
+                </ul>
+            </li>
+        </ul>
+    </ol>
+    </div>
+    </div>   
     <h1>LSC Portal</h1>
     <p class="sw-info">Base URL: <span class="sw-info-basePath">/</span>, Version: <span class="sw-info-version">1.0.0</span></p>
     <p><p>This document describes the server side API on the LSI Portal</p>
